@@ -1,14 +1,16 @@
 import Landing from './components/Landing.js';
-import Nav from './components/Nav.js'
+import Login from './components/Login.js'
+import {HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Nav/>
-      <Landing>
-
-      </Landing>
-    </>
+    <Router>
+      <Routes>
+        <Route exact path = "/" element = {<Landing/>} ></Route>
+        <Route exact path = "/Login" element = {<Login/>} ></Route>
+      </Routes>
+    </Router>
+     
 
   );
 }
