@@ -4,7 +4,7 @@ function Landing() {
     <>
       <Nav />
       <div className="bg-slate-700 h-screen">
-        <div className="bg-black p-8 mx-auto grid grid-cols-1 w-4/5 place-content-center md:grid-cols-2 xl:w-3/5">
+        <div className=" p-8 mx-auto grid grid-cols-1 w-4/5 place-content-center md:grid-cols-2 xl:w-3/5">
           <div
             className=" bg-contain bg-no-repeat  w-full h-24 xl:h-32 "
             style={{ backgroundImage: "url('images/notifiedLogo.png')" }}
