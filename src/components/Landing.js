@@ -11,11 +11,14 @@ function Landing() {
           />
           <div className=" items-center ">
             <p className="text-white">
-              Lorem ipsum dolor sit amet, adipiscing elit. Nullam hendrerit ante
-              in libero pretium facilisis. Morbi id mauris et libero condimentum
-              suscipit. Sed porttitor urna consequat nisl laoreet, eget mollis
-              enim facilisis. Nulla tempor nibh cursus ullamcorper sagittis. Nam
-              at tortor nunc.
+              LeBron James is a basketball legend celebrated for his exceptional
+              athleticism, versatility, and leadership. Standing 6'8" and 250
+              pounds, he boasts rare physical attributes that empower him to
+              excel in various positions. His playmaking ability, marked by
+              extraordinary court vision and passing skills, consistently places
+              him among the league's top assist leaders. His global impact and enduring legacy have
+              solidified his status as one of the greatest basketball players of
+              all time.
             </p>
           </div>
         </div>
