@@ -17,7 +17,7 @@ function Nav() {
         className="ml-auto mr-[8vmin]"
         style={{ fontSize: "3vmin" }}
       >
-        <button className=" bg-blue-500  hover:bg-blue-400 text-[#E84A65] hover:text-[#C7F800] font-bold py-1 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+        <button className=" bg-blue-500  hover:bg-blue-400 text-[#C7F800] hover:text-green-200 font-bold py-1 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
           <a href="/#/Login">
             <h1 className="font-extrabold">ENTER</h1>
           </a>

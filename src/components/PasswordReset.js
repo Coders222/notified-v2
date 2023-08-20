@@ -9,13 +9,15 @@ function PasswordReset() {
   return (
     <>
       <div class="bg-slate-700 h-screen ">
-        <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
-          <div />
-          <div
-            className=" bg-contain bg-no-repeat w-24 h-16 bg-center"
-            style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
-          />
-        </div>
+        <a href="/">
+          <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
+            <div />
+            <div
+              className=" bg-contain bg-no-repeat w-24 h-16 bg-center"
+              style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
+            />
+          </div>
+        </a>
         <div class="h-[calc(100vh-4rem)] justify-center items-center flex mb-0">
           <div class="m:auto shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 h-3/5 md:w-2/5 md:h-2/3 lg:w-1/3 lg:h-3/5">
             <h1 class="text-center font-bold " style={{ fontSize: "5vmin" }}>
@@ -44,7 +46,7 @@ function PasswordReset() {
                 <button
                   type="submit"
                   onClick={() => onSubmit()}
-                  class=" rounded-lg bg-indigo-600 px-10 md:px-16 py-5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  class=" rounded-lg bg-orange-400 px-10 md:px-16 py-5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
                 >
                   Reset Password
                 </button>

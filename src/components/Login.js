@@ -14,16 +14,18 @@ function Login() {
 
   return (
     <>
-      <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
-        <div />
-        <div
-          className=" bg-contain bg-no-repeat w-24 h-16 bg-center  "
-          style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
-        />
-      </div>
+      <a href="/">
+        <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
+          <div />
+          <div
+            className=" bg-contain bg-no-repeat w-24 h-16 bg-center  "
+            style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
+          />
+        </div>
+      </a>
 
       <div className="bg-slate-700 h-[calc(100vh-4rem)] content-center justify-center flex">
-        <div class="  shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 h-3/5 md:w-2/5 md:h-2/3 lg:w-1/3 lg:h-3/5 xl:w-96 m-auto">
+        <div class="  shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 h-3/5 md:w-2/5 md:h-2/3 lg:w-1/3 lg:h-3/5 m-auto">
           <h1 class="text-center font-bold " style={{ fontSize: "5vmin" }}>
             Sign in
           </h1>

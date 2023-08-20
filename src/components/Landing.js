@@ -2,7 +2,7 @@ import Nav from "./Nav";
 function Landing() {
   return (
     <>
-      <Nav />
+      <Nav/>
       <div className="bg-slate-700 h-screen">
         <div className=" p-8 mx-auto grid grid-cols-1 w-4/5 place-content-center md:grid-cols-2 xl:w-3/5">
           <div
