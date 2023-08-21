@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import NavLogo from "./nav/NavLogo.js";
 function Login() {
   const [email, setEmail] = useState("");
   const [pswd, setPswd] = useState("");
@@ -13,23 +13,14 @@ function Login() {
   }
 
   return (
-    <>
-      <a href="/">
-        <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
-          <div />
-          <div
-            className=" bg-contain bg-no-repeat w-24 h-16 bg-center  "
-            style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
-          />
-        </div>
-      </a>
-
-      <div className="bg-slate-700 h-[calc(100vh-4rem)] content-center justify-center flex">
-        <div class="  shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 h-3/5 md:w-2/5 md:h-2/3 lg:w-1/3 lg:h-3/5 m-auto">
+    <div className = "bg-slate-700 h-full">
+      <NavLogo/>
+      <div className="content-center justify-center flex min-h-[calc(100vh-4rem)]">
+        <div class= "shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 md:w-2/5 lg:w-1/3  m-auto">
           <h1 class="text-center font-bold " style={{ fontSize: "5vmin" }}>
             Sign in
           </h1>
-          <div class="grid grid-rows-2 gap-8">
+          <div class="grid grid-rows-2 gap-8 xl:px-16">
             <div>
               <label
                 class="px-2 py-2 font-sans"
@@ -82,14 +73,14 @@ function Login() {
               <p class="text-right">
                 Not a member?&nbsp;
                 <a href="/#/Register" class="text-blue-400">
-                  Sign up
+                  Register now
                 </a>
               </p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Nav from "./nav/NavLanding";
 function PasswordReset() {
   const [email, setEmail] = useState("");
 
@@ -8,18 +8,11 @@ function PasswordReset() {
   }
   return (
     <>
-      <div class="bg-slate-700 h-screen ">
-        <a href="/">
-          <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
-            <div />
-            <div
-              className=" bg-contain bg-no-repeat w-24 h-16 bg-center"
-              style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
-            />
-          </div>
-        </a>
-        <div class="h-[calc(100vh-4rem)] justify-center items-center flex mb-0">
-          <div class="m:auto shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 h-3/5 md:w-2/5 md:h-2/3 lg:w-1/3 lg:h-3/5">
+      <Nav />
+
+      
+        <div class="bg-slate-700 justify-center items-center flex min-h-[calc(100vh-4rem)]">
+          <div class="m:auto shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 d:w-2/5 lg:w-1/3">
             <h1 class="text-center font-bold " style={{ fontSize: "5vmin" }}>
               Reset Password
             </h1>
@@ -63,7 +56,7 @@ function PasswordReset() {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }

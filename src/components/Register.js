@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavLogo from "./nav/NavLogo.js";
 
 function Login() {
   const [fname, setFname] = useState("");
@@ -24,24 +25,15 @@ function Login() {
   }
 
   return (
-    <>
-      <a href="/">
-        <div className="bg-[#6B4E54] h-16 items-center grid grid-cols-3 place-items-center">
-          <div />
-          <div
-            className=" bg-contain bg-no-repeat w-24 h-16 bg-center"
-            style={{ backgroundImage: "url('images/notifiedLogoSmall.png')" }}
-          />
-        </div>
-      </a>
-
-      <div className="h-[calc(100vh-4rem)] bg-slate-700 content-center justify-center flex">
-        <div class=" bg-[#111827] text-white rounded-3xl p-8 w-4/5 h-4/5 md:w-3/5 lg:w-1/3 xl:w-1/3 xl:h-84 m-auto">
+    <div>
+      <NavLogo/>
+      <div className="min-h-[calc(100vh-4rem)] bg-slate-700 content-center justify-center flex">
+        <div class=" bg-[#111827] text-white rounded-3xl p-8 w-4/5 md:w-3/5 lg:w-1/3 xl:w-1/3 xl:p-24 m-auto">
           <h1 class="text-center font-bold " style={{ fontSize: "5vmin" }}>
             Register
           </h1>
-          <div class="grid px-4 grid-rows-6 md:grid-rows-5 gap-4 mt-4">
-            <div class="col-span-2 xl:col-span-1">
+          <div class="grid px-4 grid-rows-6 md:grid-rows-5 gap-1 mt-4">
+            <div class="col-span-2 w-full xl:col-span-1">
               <label
                 class="text-gray-300 px-2 py-2 font-sans"
                 style={{ fontSize: "2.5vmin" }}
@@ -51,13 +43,13 @@ function Login() {
               <input
                 value={fname}
                 type="text"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
+                class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
                 placeholder="Lebron"
                 onChange={(e) => setFname(e.target.value)}
                 required
               />
             </div>
-            <div class="col-span-2 xl:col-span-1">
+            <div class="col-span-2 w-full xl:col-span-1">
               <label
                 class="text-gray-300 px-2 py-2 font-sans"
                 style={{ fontSize: "2.5vmin" }}
@@ -83,7 +75,7 @@ function Login() {
               <input
                 value={email}
                 type="text"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
+                class="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
                 placeholder="goat@gmail.com"
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -91,7 +83,7 @@ function Login() {
             </div>
             <div class="w-full col-span-2">
               <label
-                class="text-gray-300 px-2 py-2 font-sans"
+                class="h-8 text-gray-300 px-2 py-2 font-sans"
                 style={{ fontSize: "2.5vmin" }}
               >
                 Password
@@ -99,7 +91,7 @@ function Login() {
               <input
                 value={pswd}
                 type="password"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
+                class="   bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
                 placeholder="Dunk"
                 onChange={(e) => setPswd(e.target.value)}
                 required
@@ -115,7 +107,7 @@ function Login() {
               <input
                 value={pswd2}
                 type="password"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
+                class="   bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
                 placeholder="Dunk"
                 onChange={(e) => setPswd2(e.target.value)}
                 required
@@ -144,7 +136,7 @@ function Login() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
