@@ -10,7 +10,7 @@ function Landing() {
             style={{ backgroundImage: "url('images/notifiedLogo.png')" }}
           />
           <div className=" items-center ">
-            <p className="text-white">
+            <p className="text-white text-md xl:text-xl">
               LeBron James is a basketball legend celebrated for his exceptional
               athleticism, versatility, and leadership. Standing 6'8" and 250
               pounds, he boasts rare physical attributes that empower him to

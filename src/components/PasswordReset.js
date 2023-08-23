@@ -8,9 +8,7 @@ function PasswordReset() {
   }
   return (
     <>
-      <Nav />
-
-      
+      <Nav/>
         <div class="bg-slate-700 justify-center items-center flex min-h-[calc(100vh-4rem)]">
           <div class="m:auto shadow-2xl bg-[#111827] text-white rounded-3xl p-8 w-3/5 d:w-2/5 lg:w-1/3">
             <h1 class="text-center font-bold " style={{ fontSize: "5vmin" }}>
@@ -39,7 +37,7 @@ function PasswordReset() {
                 <button
                   type="submit"
                   onClick={() => onSubmit()}
-                  class=" rounded-lg bg-orange-400 px-10 md:px-16 py-5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
+                  class="text-md lg:text-xl self-center rounded-lg bg-indigo-600 px-8 py-4 md:px-16 md:py-5 text-lg font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Reset Password
                 </button>
